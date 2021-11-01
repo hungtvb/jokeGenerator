@@ -5,8 +5,8 @@ import useRandomJoke from './useRandomJoke';
 function App() {
   const firstNameRef = useRef(null);
   const lastNameRef = useRef(null);
-  const [firstName, setFirstName] = useState("Tran");
-  const [lastName, setLastName] = useState("Hung");
+  const [firstName, setFirstName] = useState("Elon");
+  const [lastName, setLastName] = useState("Musk");
   const joke = useRandomJoke(firstName, lastName);
 
   const generateJoke = () => {

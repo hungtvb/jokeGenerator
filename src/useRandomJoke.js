@@ -10,6 +10,9 @@ const useRandomJoke = (firstName, lastName) => {
           .then(data => {
             setJoke(data.value.joke);
           })
+          .catch (error => {
+            setJoke("Something wrong!");
+          })
         )
     
         fetchJoke();
