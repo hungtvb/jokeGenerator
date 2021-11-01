@@ -1,0 +1,47 @@
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  width: 300px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.form > input {
+  font-size: 15px;
+  padding: 5px;
+  outline: none;
+  width: 100%;
+}
+.button {
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+q {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 50px;
+  color:red;
+}
