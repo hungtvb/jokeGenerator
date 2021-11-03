@@ -5,7 +5,7 @@ const useRandomJoke = (firstName, lastName) => {
 
     useEffect(() => {
         const fetchJoke = async () => (
-          await fetch(`http://api.icndb.com/jokes/random?firstName=${firstName}&lastName=${lastName}`)
+          await fetch(`${process.env.REACT_APP_JOKE_API}?firstName=${firstName}&lastName=${lastName}`)
           .then(res => res.json())
           .then(data => {
             setJoke(data.value.joke);
